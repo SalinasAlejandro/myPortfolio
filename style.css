@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+:root {
+    --color-background-one: #16161a;
+    --color-background-two: #242629;
+    --color-headline: #fffffe;
+    --color-paragraph: #94a1b2;
+    --color-highlight: #7f5af0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a.navbar-brand {
+    margin-left: 10px;
+}
+
+li.nav-item{
+    margin-left: 15px;
+}
+
+a.nav-link {
+    color: var(--color-paragraph);
+}
+
+a.nav-link:hover {
+    transition: .5s;
+    color: var(--color-headline);
+}
+
+
+
+
+
+.inicio {
+    background: linear-gradient(to top, rgba(22, 22, 26, .8), rgba(22, 22, 26, 1)), url();
+    background-size: cover;
+    height: 100vh;
+    color: var(--color-paragraph);
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contents-banner {
+    padding: 20px;
+    background-color: #16161a;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contents-banner img {
+    margin-top: 40px;
+    border: 10px solid var(--color-highlight);
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contents-banner h1 {
+    margin-top: 35px;
+    font-size: 42px;
+    font-family: cursive;
+}
+
+.inicio .contents-banner h2 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.inicio .contents-banner .redes a {
+    color: var(--color-headline);
+    text-decoration: none;
+    border: 1px solid var(--color-headline);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    margin: 30px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contents-banner .redes a:hover {
+    background-color: var(--color-highlight);
+}
+
+
+
+
+
+#sobreMi {
+    background-color: var(--color-background-two);
+}
+
+#sobreMi .contenido {
+    padding: 150px 30px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+#sobreMi .contenido .left .container-img img {
+    width: 100%;
+}
+
+#sobreMi .contenido .right {
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+#sobreMi .contenido .right .info span {
+    display: inline-block;
+    background-color: var(--color-highlight);
+    color: var(--color-headline);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#sobreMi .contenido .right .info h3 {
+    color: var(--color-paragraph);
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+#sobreMi .contenido .right .info p {
+    font-size: 15px;
+    color: var(--color-headline);
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+#habilidades {
+    background-color: var(--color-background-one);
+}
+
+#habilidades .container {
+    padding: 150px 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#habilidades .container .skills span {
+    display: inline-block;
+    background-color: var(--color-highlight);
+    color: var(--color-headline);
+    padding: 15px;
+    margin: 15px;
+}
+
+#habilidades .container .row {
+    margin: 30px 1px;
+}
+
+#habilidades .container .row h3 {
+    color: var(--color-headline);
+    font-size: 30px;
+}
+
+#habilidades .container .row img {
+    width: 65px;
+    aspect-ratio: auto 65 / 65;
+    height: 65px;
+    margin: 20px 1px;
+}
+
+
+
+
+
+#portfolio {
+    background-color: var(--color-background-two);
+}
+
+#portfolio .contents {
+    padding: 150px 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#portfolio .contents .left span {
+    display: inline-block;
+    background-color: var(--color-highlight);
+    color: var(--color-headline);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#portfolio .contents .header-portfolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#portfolio .contents .left h3 {
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--color-headline);
+}
+
+#portfolio .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    grid-gap: 30px;
+}
+
+#portfolio .gallery img {
+    width: 100%;
+    transition: .5s;
+}
+
+#portfolio .gallery .project {
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .gallery .project h3 {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(0 0 0 / 50%);
+    color: var(--color-headline);
+    transition: .5s;
+    opacity: 0;
+}
+
+#portfolio .gallery .project:hover h3 {
+    opacity: 1;
+}
+
+#portfolio .gallery .project:hover img {
+    transform: scale(1.1);
+}
+
+#portfolio .gallery .project a {
+    color: var(--color-paragraph);
+    text-decoration: none;
+    transition: .3s;
+    margin-left: 5px;
+}
+
+#portfolio .gallery .project a:hover {
+    color: var(--color-highlight)
+}
+
+
+
+
+
+footer {
+    background-color: var(--color-background-one);
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .up {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-highlight);
+    color: var(--color-headline);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+footer .up:hover {
+    background-color: var(--color-headline);
+    color: var(--color-highlight);
+    transition: 0.5s;
+}
+
+footer .redes {
+    margin-bottom: 20px;
+}
+
+footer .redes a {
+    color: var(--color-headline);
+    text-decoration: none;
+    border: 1px solid var(--color-headline);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .redes a:hover {
+    background-color: var(--color-highlight);
+}
+
+
+
+
+
+
+@media screen and (max-width:430px)  {
+    
+    #portfolio .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    }
+
+}
